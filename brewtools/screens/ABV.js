@@ -1,30 +1,28 @@
 import { Text, TextInput, View, StyleSheet } from 'react-native';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function ABVScreen() {
     const [ABV, setABV] = useState("0");
     const [OG, setOG] = useState("1060");
     const [FG, setFG] = useState("1020");
 
+    useEffect(() => {
+       calculateABV(); 
+    },[FG, OG]);
+
     onChangeOG = (og) => {
-        setOG(og);
-        
-        calculateABV(OG, FG);        
+        setOG(og);            
     }
 
     onChangeFG = (fg) => {
-        setFG(fg);
-
-        calculateABV(OG, FG);
+        setFG(fg);        
     }
     
-    calculateABV = (og, fg) => {
-        var _abv = ((+og - +fg) * 131) / 1000;
+    calculateABV = () => {
+        var _abv = ((+OG - +FG) * 131) / 1000;
         _abv = +_abv.toFixed(2);
         
         setABV(_abv);
-        console.log(OG);
-        console.log(FG);
     }
     
     return (
@@ -48,10 +46,10 @@ function ABVScreen() {
                 placeholder="FG"
                 keyboardType="numeric"
             />
-            <View style={styles.abv_container}>
+            <View style={styles.abv_container}>                
                 <Text
                     style={styles.abv}>
-                    { ABV }
+                    Alcohol by volume: { ABV }%
                 </Text>
             </View>
         </View>
