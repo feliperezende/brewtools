@@ -1,5 +1,6 @@
 # Brewtools
 Tools for home brewing 🍺
+(https://img.shields.io/github/last-commit/feliperezende/brewtools) | (https://img.shields.io/github/issues/feliperezende/brewtools)
 
 # Features
 - ABV calculator
