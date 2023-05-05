@@ -24,7 +24,7 @@ const DATA = [
     {
         id: 'item-hydro',
         title: 'Hydrometer',
-        description: 'Measure density'
+        description: 'Hydrometer temperature correction'
     },
     {
         id: 'item-unit',

@@ -7,7 +7,7 @@ Tools for home brewing 🍺
 # Features
 - ABV calculator
 - Bottle calculator
-- Hydrometer
+- Hydrometer temperature correction
 - Unit converter
 
 # Setting up environment
@@ -33,10 +33,10 @@ Run on web
 npm run web
 ```
 
-# Technologies
+# About
 
-This project was developed with the following technologies:
+This project uses:
 
-- [React](https://reactjs.org/) - a JavaScript library for building user interfaces.
+- [React](https://reactjs.org/) - a JavaScript library for building user interfaces
 - [React Native](https://reactnative.dev/) - a framework for building native apps using React
-- [Expo](https://expo.io/) - a framework and a platform for universal React applications.
+- [Expo](https://expo.io/) - a framework and a platform for universal React applications
