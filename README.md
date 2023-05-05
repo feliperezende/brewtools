@@ -7,6 +7,12 @@ Tools for home brewing 🍺
 - Hydrometer
 - Unit converter
 
+# Setting up environment
+```bash
+cd brewtools
+npm install
+```
+
 # How to run
 
 Run on iOS simulator
@@ -14,13 +20,12 @@ Run on iOS simulator
 npm run ios
 ```
 
-Run on iOS simulator/device
+Run on Android simulator/device
 ```bash
 npm run android
 ```
 
 Run on web
-Run on iOS simulator
 ```bash
 npm run web
 ```
