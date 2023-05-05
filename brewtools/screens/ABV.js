@@ -7,7 +7,7 @@ function ABVScreen() {
     const [FG, setFG] = useState("1020");
 
     useEffect(() => {
-       calculateABV(); 
+       calculateABV();        
     },[FG, OG]);
 
     onChangeOG = (og) => {
@@ -29,9 +29,8 @@ function ABVScreen() {
         <View style={{ flex: 1 }}>
             <Text
                 style={{ fontSize: 32, margin: 12 }}>
-                ABV calculator
+                OG
             </Text>
-
             <TextInput
                 style={styles.input}
                 onChangeText={onChangeOG}
@@ -39,6 +38,10 @@ function ABVScreen() {
                 placeholder="OG"
                 keyboardType="numeric"
             />
+            <Text
+                style={{ fontSize: 32, margin: 12 }}>
+                FG
+            </Text>
             <TextInput
                 style={styles.input}
                 onChangeText={onChangeFG}
@@ -59,7 +62,8 @@ function ABVScreen() {
 const styles = StyleSheet.create({
     input: {
         height: 40,
-        margin: 12,
+        marginLeft: 12,
+        marginRight: 12,
         borderWidth: 1,
         padding: 10,
     },
