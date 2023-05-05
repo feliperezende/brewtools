@@ -1,6 +1,6 @@
 # Brewtools
 Tools for home brewing 🍺
-(https://img.shields.io/github/last-commit/feliperezende/brewtools) | (https://img.shields.io/github/issues/feliperezende/brewtools)
+![lastcommit](https://img.shields.io/github/last-commit/feliperezende/brewtools) | ![issues](https://img.shields.io/github/issues/feliperezende/brewtools)
 
 # Features
 - ABV calculator
@@ -30,3 +30,11 @@ Run on web
 ```bash
 npm run web
 ```
+
+# 🚀 Technologies
+
+This project was developed with the following technologies:
+
+- [React](https://reactjs.org/) - a JavaScript library for building user interfaces.
+- [React Native](https://reactnative.dev/) - a framework for building native apps using React
+- [Expo](https://expo.io/) - a framework and a platform for universal React applications.
