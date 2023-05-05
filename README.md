@@ -1,5 +1,5 @@
 # Brewtools
-Tools for home brewing. 🍺
+Tools for home brewing 🍺
 
 # Features
 - ABV calculator
@@ -7,6 +7,7 @@ Tools for home brewing. 🍺
 - Hydrometer
 - Unit converter
 
+# How to run
 
 Run on iOS simulator
 ```bash
