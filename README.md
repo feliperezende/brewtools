@@ -1,6 +1,8 @@
 # Brewtools
 Tools for home brewing 🍺
-![lastcommit](https://img.shields.io/github/last-commit/feliperezende/brewtools) | ![issues](https://img.shields.io/github/issues/feliperezende/brewtools)
+
+
+![Last commit](https://img.shields.io/github/last-commit/feliperezende/brewtools) ![Issues](https://img.shields.io/github/issues/feliperezende/brewtools)
 
 # Features
 - ABV calculator
@@ -31,7 +33,7 @@ Run on web
 npm run web
 ```
 
-# 🚀 Technologies
+# Technologies
 
 This project was developed with the following technologies:
 
