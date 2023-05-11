@@ -1,5 +1,6 @@
 import { Text, TextInput, View, StyleSheet } from 'react-native';
 import React, { useEffect, useState } from 'react';
+import { calculateABV } from '../utils/abv';
 
 function ABVScreen() {
     const [ABV, setABV] = useState("0");
@@ -7,7 +8,7 @@ function ABVScreen() {
     const [FG, setFG] = useState("1020");
 
     useEffect(() => {
-       calculateABV();        
+        updateABV();        
     },[FG, OG]);
 
     onChangeOG = (og) => {
@@ -18,9 +19,8 @@ function ABVScreen() {
         setFG(fg);        
     }
     
-    calculateABV = () => {
-        var _abv = ((+OG - +FG) * 131) / 1000;
-        _abv = +_abv.toFixed(2);
+    updateABV = () => {
+        var _abv = calculateABV(OG, FG);
         
         setABV(_abv);
     }
