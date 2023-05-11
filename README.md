@@ -12,7 +12,6 @@ Tools for home brewing 🍺
 
 # Setting up environment
 ```bash
-cd brewtools
 npm install
 ```
 
